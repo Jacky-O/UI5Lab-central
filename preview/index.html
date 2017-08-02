@@ -8,9 +8,8 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('assets/comingsoon_bg.jpg');
+    background-image: url('assets/lab_bg.jpg');
     height: 100%;
-    background-position: center;
     background-size: cover;
     position: relative;
     color: white;
@@ -19,13 +18,13 @@ body, html {
 }
 
 .topleft {
-    position: absolute;
+    position: relative;
     top: 16px;
     left: 16px;
 }
 
 .bottomleft {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 16px;
 }
@@ -35,6 +34,21 @@ body, html {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middleLeft {
+    position: absolute;
+    top: 48%;
+    left: 17%;
+    transform: translate(-17%, -17%);
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    transform: translate(-21%, -21%);
     text-align: center;
 }
 
@@ -53,6 +67,22 @@ body, html {
     font-size: 40px;
 }
 
+.aboutText {
+    margin-left: 17%;
+    text-align: center;
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.linkBubbles{
+   max-width: 40%;
+   height: auto;
+   position: absolute;
+   margin-top: 10%;
+   margin-left: 40%;
+}
+
 hr {
     margin: auto;
     width: 40%;
@@ -65,15 +95,20 @@ hr {
     <image class="logoImage" src="assets/lab_icon.png" />
     <p class="logoText">UI5Lab</p>
   </div>
-  <div class="middle">
-    <h1>Lab under construction</h1>
-    <hr>
-    <p id="countdown" style="font-size:30px"></p>
+  <div class="title">
+    <h1>Join the Lab!</h1>
   </div>
-  <div class="bottomleft">
-    <p style="font-size:30px">Interested in contributing? </p>
-    <p style="font-size:30px">Find out more on <a class="links" href="https://github.com/UI5Lab/UI5Lab-central">GitHub</a> </p>
+  <img src="assets/about_marks.png" class="middleLeft" /> 
+  <div class="middleLeft">
+    <p class="aboutText"> UI5Lab is a community driven project to establish a custom UI5 control library. It is meant to gather forces throughout the community and enable everyone to use the custom made controls scattered in the world wide web. </p> 
   </div>
+  <img src="assets/link_bubbles_small.png" class="linkBubbles" usemap="#linkMap">  
+        <map name="linkMap">
+            <area shape="circle" coords="449,108,108" alt="Explore" href="">
+            <area shape="circle" coords="143,239,143" alt="Contribute" href="">
+            <area shape="circle" coords="421,382,79" alt="Wiki" href="">
+            <area shape="circle" coords="591,502,96" alt="Contact" href="">
+        </map>
 </div>
 
 <script>
