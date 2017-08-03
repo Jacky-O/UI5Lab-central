@@ -44,6 +44,13 @@ body, html {
     transform: translate(-17%, -17%);
 }
 
+.middleRight{
+    position: relative;
+    top: 33%;
+    left: 48%;
+    transform: translate(-27%, -27%);;
+}
+
 .title{
     position: absolute;
     top: 30%;
@@ -54,6 +61,9 @@ body, html {
 
 .links{
     color: white;
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: none; 
 }
 
 .logoImage {
@@ -75,12 +85,58 @@ body, html {
     font-weight: bold;
 }
 
-.linkBubbles{
-   max-width: 40%;
-   height: auto;
-   position: absolute;
-   margin-top: 10%;
-   margin-left: 40%;
+.circle1{
+    position: absolute;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background: #ff5a37;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    top: 0px;
+    left: 47%;
+    
+}
+.circle2{
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    background: #37adff;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 230px;
+    position: absolute;
+    top: 50px;
+    left: 30%; 
+}
+.circle3{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: #ff9f37;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px; 
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+.circle4{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: #37efff;
+    opacity: 0.5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px; 
+    position: absolute;
+    top: 250px;
+    left: 59%;
 }
 
 hr {
@@ -102,13 +158,20 @@ hr {
   <div class="middleLeft">
     <p class="aboutText"> UI5Lab is a community driven project to establish a custom UI5 control library. It is meant to gather forces throughout the community and enable everyone to use the custom made controls scattered in the world wide web. </p> 
   </div>
-  <img src="assets/link_bubbles_small.png" class="linkBubbles" usemap="#linkMap">  
-        <map name="linkMap">
-            <area shape="circle" coords="449,108,108" alt="Explore" href="">
-            <area shape="circle" coords="143,239,143" alt="Contribute" href="">
-            <area shape="circle" coords="421,382,79" alt="Wiki" href="">
-            <area shape="circle" coords="591,502,96" alt="Contact" href="">
-        </map>
+  <div class="middleRight">
+    <div class="circle1" alt="Explore">
+        <a href="http://openui5.org/logo.html" class="links">Explore</a>
+    </div>
+    <div class="circle2" alt="Contribute" href="">
+        <a href="http://openui5.org/logo.html" class="links">Contribute</a>
+    </div>
+    <div class="circle3" alt="Wiki" href="">
+        <a href="http://openui5.org/logo.html" class="links">Wiki</a>
+    </div>
+    <div class="circle4" alt="Contact" href="">
+        <a href="http://openui5.org/logo.html" class="links">Contact</a>
+    </div>
+  </div>
 </div>
 
 <script>
